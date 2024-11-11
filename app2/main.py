@@ -18,7 +18,10 @@ print(df.head)
 l = LinearRegression()
 
 model = l.fit(x,y) #machine learn
+x_=model.coef_
+y_=model.intercept_
 
 predict = model.predict([[10,4]])
 print(model.score(x,y))
 print(predict)
+
